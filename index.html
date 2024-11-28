@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Form Pendaftaran</title>
+
+    <meta name="keywords" content="Pendaftaran Pengurus YRI Sulsel Batch 3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="csrf-token" content="UsuSYU6h8xpg83JcviCvZ1Qsa7kLs32ShD0nefKY">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ayo Bergabung! Pendaftaran Pengurus YRI Sulsel Batch 3 Dibuka!" />
+    <meta property="og:site_name" content="Ayo Bergabung! Pendaftaran Pengurus YRI Sulsel Batch 3 Dibuka!" />
+    <meta property="og:image" content="https://i.ibb.co.com/gMXpgy6/image.png" />
+</head>
+
+<body>
+    <div class="content">
+    <div class="form-container">
+        <div class="thumbnail-container">
+            <img src="/thumb-form.jpg" alt="Thumbnail" class="thumbnail-img">
+        </div>
+        
+        <div class="announcement">
+            <h2>Pendaftaran Kepengurusan YRI Sulawesi Selatan Batch 3</h2>
+            <p>
+                [OPREC PENGURUS YOUTH RANGER REGIONAL SULAWESI SELATAN]
+                📢📢 Hei hei hei, kalian yang berjiwa muda, kalian yang ingin berkontribusi lebih untuk YRI📢📢
+                <br><br>
+                Yes, it’s your turn. Ini saatnya kamu menunjukan kesungguhan dan kontribusimu untuk perkembangan pelatihan softskill
+                kaum muda di Sulawesi Selatan. Daftarkan dirimu segera untuk menjadi pengurus YRI Regional Sulsel.
+                <br><br>
+                Apa sih keuntungannya jadi pengurus YRI? Banyak. Selain mendapatkan pengalaman berorganisasi, kamu juga bakal terbiasa
+                berinteraksi dengan founder YRI dan jajarannya, serta punya lebih banyak kesempatan buat berinteraksi dengan para
+                narasumber yang sudah punya segudang prestasi, dan ilmu yang siap ditularkan tentunya.
+                <br><br>
+                POSITION AVAILABLE
+                Divisi Kesekretariatan
+                Divisi Finance
+                Divisi Human Resource Development
+                Divisi Public Relation
+                Divisi Graphic Desaign
+                Divisi Social Media Marketing
+                Divisi Content Creator
+                Divisi Project Management
+                <br><br>
+                📝Syarat:
+                1. Berusia 18-24 tahun
+                2. Memiliki ketertarikan pada divisi yang tersedia
+                3. Mampu mengatur waktu dengan baik
+                4. Berdomisili di Sulawesi Selatan
+                5. Melampirkan CV
+                6. Mampu berkerja dalam tim
+                7. Ingin belajar
+                <br><br>
+                🗓 Timeline:
+                14-21 Juli 2024 : Pendaftaran
+                24 Juli 2024 : Pengumuman Berkas
+                25 Juli 2024 : Pengumuman Jadwal Interview
+                26-27 Juli 2024 : Interview
+                29 Juli 2024 : Pengumuman Akhir
+                4 Agustus 2024 : Onboarding
+                <br><br>
+                SEE YOU SOON👋
+            </p>
+            <p style="color: red; font-weight: bold;">Catatan: Pastikan email yang dimasukkan aktif untuk menerima informasi
+                lebih lanjut.</p>
+        </div>
+
+        <!-- Pesan Error Default -->
+        <div id="error-message"
+            style="color: rgb(48, 48, 48); display:none; padding: 10px; margin-bottom: 10px; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px;">
+            Pendaftaran berhasil, Terima kasih telah mendaftar✨!
+        </div>
+
+        <!-- Formulir Pendaftaran -->
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap <span style="color: red;">*</span></label>
+                <input type="text" id="nama" name="nama" placeholder="Silakan masukkan nama lengkap kamu"
+                    required>
+                <small>Masukkan nama lengkap kamu.</small>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat Tempat Tinggal <span style="color: red;">*</span></label>
+                <input type="alamat" id="alamat" name="alamat" placeholder="Silakan masukkan alamat kamu di sini" required>
+                <small>Masukkan alamat lengkap kamu.</small>
+            </div>
+            <div class="form-group">
+                <label for="usia">Usia <span style="color: red;">*</span></label>
+                <input type="usia" id="usia" name="usia"
+                    placeholder="Silahkan masukkan usia kamu" required>
+                <small>Usia 15-35 tahun.</small>
+            </div>
+            <div class="form-group">
+                <button type="submit">Daftar</button>
+            </div>
+        </form>
+
+        <p>Kamu punya pertanyaan ? <a href="#">Hubungi kami</a></p>
+
+        <!-- Pesan Sukses -->
+        <div id="success-message" style="display:none;">
+            <p style="color:green;">Data berhasil dikirim! Terima kasih telah mendaftar.</p>
+        </div>
+    </div>
+    </div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2024 YRI Sulawesi Selatan. All rights reserved.</p>
+        <p>
+            <a href="https://example.com/privacy-policy" target="_blank">Privacy Policy</a> |
+            <a href="https://example.com/terms" target="_blank">Terms of Service</a>
+        </p>
+        <p>Follow us on
+            <a href="https://instagram.com" target="_blank">Instagram</a>,
+            <a href="https://facebook.com" target="_blank">Facebook</a>, and
+            <a href="https://twitter.com" target="_blank">Twitter</a>.
+        </p>
+    </div>
+</footer>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var formData = new FormData(this);
+            var formObject = {};
+            formData.forEach(function (value, key) {
+                formObject[key] = value;
+            });
+
+            // Gantilah dengan URL dari Google Apps Script Web App yang sudah dipublikasikan
+            var scriptUrl = 'https://script.google.com/macros/s/AKfycbzekWmQHmClnGrpZDwGCIj8Mx5Zjs_7F7NIUwkU8ZAeujNiifzpmtYRF11QrfODvMEx/exec';
+
+            fetch(scriptUrl, {
+                method: 'POST',
+                body: new URLSearchParams(formObject)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Menampilkan pesan sukses
+                    document.getElementById('success-message').style.display = 'block';
+                    // Reset form setelah menampilkan pesan sukses
+                    setTimeout(function () {
+                        // Reset form dan sembunyikan pesan sukses setelah beberapa detik
+                        document.getElementById('registration-form').reset();
+                        document.getElementById('success-message').style.display = 'none';
+                    }, 2000); // Reset form setelah 2 detik
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    // Menampilkan pesan kesalahan
+                    document.getElementById('error-message').style.display = 'block';
+                    // Reset form setelah kesalahan
+                    setTimeout(function () {
+                        // Reset form dan sembunyikan pesan kesalahan setelah beberapa detik
+                        document.getElementById('registration-form').reset();
+                        document.getElementById('error-message').style.display = 'none';
+                    }, 5000); // Reset form setelah 2 detik
+                });
+        });
+    </script>
+
+</body>
+
+</html>
