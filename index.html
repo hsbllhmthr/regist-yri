@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Form Pendaftaran</title>
-
     <meta name="keywords" content="Pendaftaran Pengurus YRI Sulsel Batch 3" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
@@ -39,15 +41,15 @@
                 berinteraksi dengan founder YRI dan jajarannya, serta punya lebih banyak kesempatan buat berinteraksi dengan para
                 narasumber yang sudah punya segudang prestasi, dan ilmu yang siap ditularkan tentunya.
                 <br><br>
-                POSITION AVAILABLE
-                Divisi Kesekretariatan
-                Divisi Finance
-                Divisi Human Resource Development
-                Divisi Public Relation
-                Divisi Graphic Desaign
-                Divisi Social Media Marketing
-                Divisi Content Creator
-                Divisi Project Management
+                POSITION AVAILABLE :
+                Divisi Kesekretariatan,
+                 Divisi Finance,
+                 Divisi Human Resource Development,
+                 Divisi Public Relation,
+                 Divisi Graphic Desaign,
+                 Divisi Social Media Marketing,
+                 Divisi Content Creator,
+                 Divisi Project Management,
                 <br><br>
                 📝Syarat:
                 1. Berusia 18-24 tahun
@@ -58,25 +60,84 @@
                 6. Mampu berkerja dalam tim
                 7. Ingin belajar
                 <br><br>
-                🗓 Timeline:
-                14-21 Juli 2024 : Pendaftaran
-                24 Juli 2024 : Pengumuman Berkas
-                25 Juli 2024 : Pengumuman Jadwal Interview
-                26-27 Juli 2024 : Interview
-                29 Juli 2024 : Pengumuman Akhir
-                4 Agustus 2024 : Onboarding
-                <br><br>
                 SEE YOU SOON👋
             </p>
             <p style="color: red; font-weight: bold;">Catatan: Pastikan email yang dimasukkan aktif untuk menerima informasi
                 lebih lanjut.</p>
         </div>
 
-        <!-- Pesan Error Default -->
-        <div id="error-message"
-            style="color: rgb(48, 48, 48); display:none; padding: 10px; margin-bottom: 10px; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px;">
-            Pendaftaran berhasil, Terima kasih telah mendaftar✨!
+<div class="calendar-schedule-container mt-4 mb-4">
+    <div class="card shadow-sm">
+        <div class="card-header text-center" style="background-color: #9350B7; color: white;">
+            <h5 class="mb-0">📅 Timeline Pendaftaran</h5>
         </div>
+        <div class="card-body">
+            <div class="calendar-schedule">
+                <!-- Event 1 -->
+                <div class="calendar-event" style="border-left: 5px solid #007bff;">
+                    <div class="event-date">
+                        <h6>14-21 Juli 2024</h6>
+                    </div>
+                    <div class="event-details">
+                        <h6>Pendaftaran Dibuka</h6>
+                        <p>Mulai ajukan pendaftaran untuk bergabung menjadi pengurus YRI Sulsel Batch 3.</p>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="calendar-event" style="border-left: 5px solid #6c757d;">
+                    <div class="event-date">
+                        <h6>24 Juli 2024</h6>
+                    </div>
+                    <div class="event-details">
+                        <h6>Pengumuman Berkas</h6>
+                        <p>Hasil seleksi berkas akan diumumkan melalui email yang didaftarkan.</p>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="calendar-event" style="border-left: 5px solid #28a745;">
+                    <div class="event-date">
+                        <h6>25 Juli 2024</h6>
+                    </div>
+                    <div class="event-details">
+                        <h6>Pengumuman Jadwal Interview</h6>
+                        <p>Informasi jadwal interview akan diinformasikan kepada peserta yang lolos seleksi berkas.</p>
+                    </div>
+                </div>
+                <!-- Event 4 -->
+                <div class="calendar-event" style="border-left: 5px solid #dc3545;">
+                    <div class="event-date">
+                        <h6>26-27 Juli 2024</h6>
+                    </div>
+                    <div class="event-details">
+                        <h6>Sesi Interview</h6>
+                        <p>Interview dengan peserta untuk memastikan kecocokan dan kemampuan.</p>
+                    </div>
+                </div>
+                <!-- Event 5 -->
+                <div class="calendar-event" style="border-left: 5px solid #17a2b8;">
+                    <div class="event-date">
+                        <h6>29 Juli 2024</h6>
+                    </div>
+                    <div class="event-details">
+                        <h6>Pengumuman Akhir</h6>
+                        <p>Hasil akhir akan diumumkan kepada seluruh peserta melalui email.</p>
+                    </div>
+                </div>
+                <!-- Event 6 -->
+                <div class="calendar-event" style="border-left: 5px solid #ffc107;">
+                    <div class="event-date">
+                        <h6>4 Agustus 2024</h6>
+                    </div>
+                    <div class="event-details">
+                        <h6>Onboarding</h6>
+                        <p>Proses onboarding untuk pengurus baru yang telah terpilih.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
         <!-- Formulir Pendaftaran -->
         <form id="registration-form">
@@ -87,30 +148,72 @@
                 <small>Masukkan nama lengkap kamu.</small>
             </div>
             <div class="form-group">
+                <label for="namap">Nama Panggilan <span style="color: red;">*</span></label>
+                <input type="text" id="namap" name="namap" placeholder="Silakan masukkan nama panggilan kamu" required>
+                <small>Masukkan nama panggilan kamu.</small>
+            </div>
+            <div class="form-group">
                 <label for="alamat">Alamat Tempat Tinggal <span style="color: red;">*</span></label>
                 <input type="alamat" id="alamat" name="alamat" placeholder="Silakan masukkan alamat kamu di sini" required>
                 <small>Masukkan alamat lengkap kamu.</small>
             </div>
             <div class="form-group">
                 <label for="usia">Usia <span style="color: red;">*</span></label>
-                <input type="usia" id="usia" name="usia"
-                    placeholder="Silahkan masukkan usia kamu" required>
-                <small>Usia 15-35 tahun.</small>
+                <input type="number" id="usia" name="usia" placeholder="Silakan masukkan usia kamu (contoh : 22)" required>
+                <small id="usia-error" class="text-danger" style="display: none;">Usia harus di antara 18 dan 24 tahun.</small>
             </div>
             <div class="form-group">
-                <button type="submit">Daftar</button>
+                <label for="divisi">Divisi yang ingin kamu pilih <span style="color: red;">*</span></label>
+                <select class="form-control" id="divisi" name="divisi" required>
+                    <option value="" disabled selected>Pilih Divisi</option>
+                    <option value="Kesekretariatan">Kesekretariatan 📃</option>
+                    <option value="Finance">Finance 💹</option>
+                    <option value="Graphic Design">Graphic Design 🔮</option>
+                    <option value="Human Resource Development">Human Resource Development 🤵</option>
+                    <option value="Public Relation">Public Relation 🤝</option>
+                    <option value="Social Media Marketing">Social Media Marketing 📊</option>
+                    <option value="Content Creator">Content Creator 📱</option>
+                </select>
             </div>
+            <button type="submit" class="btn btn-custom btn-lg btn-block mb-4 mt-3"
+                style="background-color: #9350B7; color: white;">
+                <i class="fas fa-paper-plane"></i> Daftar
+            </button>
+
         </form>
 
-        <p>Kamu punya pertanyaan ? <a href="#">Hubungi kami</a></p>
+        <p>Mohon menunggu 5 detik setelah klik tombol daftar hingga muncul pesan berhasil mendaftar.</p>
 
-        <!-- Pesan Sukses -->
-        <div id="success-message" style="display:none;">
-            <p style="color:green;">Data berhasil dikirim! Terima kasih telah mendaftar.</p>
+        <!-- Progress Bar untuk Menampilkan Proses -->
+        <div class="progress" id="progress-bar-container" style="display: none;">
+            <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                aria-valuemin="0" aria-valuemax="100"></div>
         </div>
+
+        <!-- Modal Sukses -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">🎉 Pendaftaran Berhasil!</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>Terima kasih, <strong id="submitted-name"></strong>!</p>
+                        <p>Anda telah mendaftar untuk divisi <strong id="submitted-divisi"></strong>.</p>
+                        <hr>
+                        <p class="mb-0">Selamat bergabung dengan Youth Ranger Indonesia Regional Sulawesi Selatan!</p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     </div>
 
+    <!-- Bagian Footer-->
 <footer class="footer">
     <div class="footer-container">
         <p>&copy; 2024 YRI Sulawesi Selatan. All rights reserved.</p>
@@ -125,49 +228,98 @@
         </p>
     </div>
 </footer>
+<script>
+    document.getElementById('registration-form').addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    <script>
-        document.getElementById('registration-form').addEventListener('submit', function (e) {
-            e.preventDefault();
+        // Validasi usia sebelum melanjutkan
+        var usiaInput = document.getElementById('usia').value;
+        var errorElement = document.getElementById('usia-error');
 
-            var formData = new FormData(this);
-            var formObject = {};
-            formData.forEach(function (value, key) {
-                formObject[key] = value;
-            });
+        if (usiaInput < 18 || usiaInput > 24) {
+            errorElement.style.display = 'block';
+            document.getElementById('usia').classList.add('is-invalid');
+            alert('Kamu harus berusia 18-24 tahun untuk bisa melanjutkan pendaftaran');
+            return;
+        } else {
+            errorElement.style.display = 'none';
+            document.getElementById('usia').classList.remove('is-invalid');
+        }
 
-            // Gantilah dengan URL dari Google Apps Script Web App yang sudah dipublikasikan
-            var scriptUrl = 'https://script.google.com/macros/s/AKfycbzekWmQHmClnGrpZDwGCIj8Mx5Zjs_7F7NIUwkU8ZAeujNiifzpmtYRF11QrfODvMEx/exec';
+        // Menampilkan progress bar
+        var progressBarContainer = document.getElementById('progress-bar-container');
+        var progressBar = document.getElementById('progress-bar');
+        progressBarContainer.style.display = 'block';
 
-            fetch(scriptUrl, {
-                method: 'POST',
-                body: new URLSearchParams(formObject)
-            })
-                .then(response => response.json())
-                .then(data => {
-                    // Menampilkan pesan sukses
-                    document.getElementById('success-message').style.display = 'block';
-                    // Reset form setelah menampilkan pesan sukses
-                    setTimeout(function () {
-                        // Reset form dan sembunyikan pesan sukses setelah beberapa detik
-                        document.getElementById('registration-form').reset();
-                        document.getElementById('success-message').style.display = 'none';
-                    }, 2000); // Reset form setelah 2 detik
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    // Menampilkan pesan kesalahan
-                    document.getElementById('error-message').style.display = 'block';
-                    // Reset form setelah kesalahan
-                    setTimeout(function () {
-                        // Reset form dan sembunyikan pesan kesalahan setelah beberapa detik
-                        document.getElementById('registration-form').reset();
-                        document.getElementById('error-message').style.display = 'none';
-                    }, 5000); // Reset form setelah 2 detik
+        var currentProgress = 0;
+
+        // Animasi progress bar
+        var interval = setInterval(function () {
+            if (currentProgress < 100) {
+                currentProgress += 10;
+                progressBar.style.width = currentProgress + '%';
+                progressBar.setAttribute('aria-valuenow', currentProgress);
+            } else {
+                clearInterval(interval);
+
+                // Simulasi pengiriman data setelah progress selesai
+                var formData = new FormData(document.getElementById('registration-form'));
+                var formObject = {};
+                formData.forEach(function (value, key) {
+                    formObject[key] = value;
                 });
-        });
-    </script>
 
+                var scriptUrl = 'https://script.google.com/macros/s/AKfycbwdHK_sVdHGRw5DLrk98Ap1CNflmaa6SkXgjecia7DT9VTv-lVn9bqOzjt8G6R0-lwzeA/exec';
+
+                fetch(scriptUrl, {
+                    method: 'POST',
+                    body: new URLSearchParams(formObject)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Sembunyikan progress bar setelah pengiriman selesai
+                        setTimeout(function () {
+                            progressBarContainer.style.display = 'none';
+
+                            // Setel nama pengguna dan divisi ke modal
+                            document.getElementById('submitted-name').textContent = formObject.nama;
+                            document.getElementById('submitted-divisi').textContent = formObject.divisi;
+
+                            // Tampilkan modal berhasil
+                            var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                            successModal.show();
+
+                            // Reset form setelah modal muncul
+                            document.getElementById('registration-form').reset();
+                        }, 500); // Tunggu 500ms untuk memastikan progress bar selesai
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+        }, 300); // Update progress setiap 300ms
+    });
+
+    // Fungsi validasi usia real-time
+    document.getElementById('usia').addEventListener('input', function () {
+        var usiaInput = this.value;
+        var errorElement = document.getElementById('usia-error');
+
+        if (usiaInput >= 18 && usiaInput <= 24) {
+            errorElement.style.display = 'none';
+            this.classList.remove('is-invalid');
+            this.classList.add('is-valid');
+        } else {
+            errorElement.style.display = 'block';
+            this.classList.add('is-invalid');
+            this.classList.remove('is-valid');
+        }
+    });
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>
