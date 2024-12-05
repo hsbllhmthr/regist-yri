@@ -65,12 +65,7 @@
             <p style="color: red; font-weight: bold;">Catatan: Pastikan email yang dimasukkan aktif untuk menerima informasi
                 lebih lanjut.</p>
         </div>
-
 <div class="calendar-schedule-container mt-4 mb-4">
-    <div class="card shadow-sm">
-        <div class="card-header text-center" style="background-color: #9350B7; color: white;">
-            <h5 class="mb-0">📅 Timeline Pendaftaran</h5>
-        </div>
         <div class="card-body">
             <div class="calendar-schedule">
                 <!-- Event 1 -->
@@ -135,37 +130,45 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
-
-
         <!-- Formulir Pendaftaran -->
         <form id="registration-form">
             <div class="form-group">
                 <label for="nama">Nama Lengkap <span style="color: red;">*</span></label>
                 <input type="text" id="nama" name="nama" placeholder="Silakan masukkan nama lengkap kamu"
                     required>
-                <small>Masukkan nama lengkap kamu.</small>
+                <small>Kasih tau dong, biar kita makin akrab!</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email <span style="color: red;">*</span></label>
+                <input type="email" id="email" name="email" class="form-control"
+                    placeholder="Silakan masukkan email kamu" required>
+                <small>Email aktif, plis. kita nggak mau nge-spam kok</small>
             </div>
             <div class="form-group">
                 <label for="namap">Nama Panggilan <span style="color: red;">*</span></label>
                 <input type="text" id="namap" name="namap" placeholder="Silakan masukkan nama panggilan kamu" required>
-                <small>Masukkan nama panggilan kamu.</small>
+                <small>Jangan ngasal ya, bingung ntar kita!</small>
             </div>
             <div class="form-group">
                 <label for="alamat">Alamat Tempat Tinggal <span style="color: red;">*</span></label>
                 <input type="alamat" id="alamat" name="alamat" placeholder="Silakan masukkan alamat kamu di sini" required>
-                <small>Masukkan alamat lengkap kamu.</small>
+                <small>Yang lengkap, biar nggak nyasar!</small>
+            </div>
+            <div class="form-group">
+                <label for="nope">Nomor Whatsapp <span style="color: red;">*</span></label>
+                <input type="nope" id="nope" name="nope" placeholder="Silakan masukkan nomor kamu di sini" required>
+                <small>Jangan kasih nomor pinjol, ntar dikira nagih utang</small>
             </div>
             <div class="form-group">
                 <label for="usia">Usia <span style="color: red;">*</span></label>
-                <input type="number" id="usia" name="usia" placeholder="Silakan masukkan usia kamu (contoh : 22)" required>
+                <input type="number" id="usia" name="usia" placeholder="Umur hanyalah angka" required>
                 <small id="usia-error" class="text-danger" style="display: none;">Usia harus di antara 18 dan 24 tahun.</small>
             </div>
             <div class="form-group">
                 <label for="divisi">Divisi yang ingin kamu pilih <span style="color: red;">*</span></label>
                 <select class="form-control" id="divisi" name="divisi" required>
-                    <option value="" disabled selected>Pilih Divisi</option>
+                    <option value="" disabled selected>Plih yang bikin kamu happy</option>
                     <option value="Kesekretariatan">Kesekretariatan 📃</option>
                     <option value="Finance">Finance 💹</option>
                     <option value="Graphic Design">Graphic Design 🔮</option>
@@ -177,7 +180,7 @@
             </div>
             <button type="submit" class="btn btn-custom btn-lg btn-block mb-4 mt-3"
                 style="background-color: #9350B7; color: white;">
-                <i class="fas fa-paper-plane"></i> Daftar
+                <i class="fas fa-paper-plane"></i> Udah?, klik tombol ini aja
             </button>
 
         </form>
@@ -229,6 +232,19 @@
     </div>
 </footer>
 <script>
+    document.getElementById('email').addEventListener('input', function () {
+            var emailInput = this.value;
+            var isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput); // Regex validasi email sederhana
+
+            if (isValid) {
+                this.classList.remove('is-invalid');
+                this.classList.add('is-valid');
+            } else {
+                this.classList.add('is-invalid');
+                this.classList.remove('is-valid');
+            }
+        });
+
     document.getElementById('registration-form').addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -269,7 +285,7 @@
                     formObject[key] = value;
                 });
 
-                var scriptUrl = 'https://script.google.com/macros/s/AKfycbwdHK_sVdHGRw5DLrk98Ap1CNflmaa6SkXgjecia7DT9VTv-lVn9bqOzjt8G6R0-lwzeA/exec';
+                var scriptUrl = 'https://script.google.com/macros/s/AKfycbzLdJmrx-XEKbhy-r7fA76Nlu8Kw0B0-Y8tm1eiuLFXU1uuSoiRDejlkIjvPzosfcRZ4Q/exec';
 
                 fetch(scriptUrl, {
                     method: 'POST',
